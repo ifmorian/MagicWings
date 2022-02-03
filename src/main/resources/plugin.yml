@@ -1,0 +1,5 @@
+name: MagicWings
+version: 1.0
+author: Orian
+main: me.orian.magicwings.main.Main
+api-version: 1.18
