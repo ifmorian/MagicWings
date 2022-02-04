@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MagicWings" />
+        <module name="magicwings" />
       </profile>
     </annotationProcessing>
   </component>
