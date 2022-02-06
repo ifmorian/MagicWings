@@ -6,7 +6,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 public class Main extends JavaPlugin {
 
     public void onEnable() {
-        new WingsController(this).enableController(false);
+        new WingsController(this).enableController(true);
     }
 
     public void onDisable() {

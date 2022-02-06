@@ -10,13 +10,14 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 import org.bukkit.scheduler.BukkitTask;
 
+import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
 
 public class WingsController {
 
-    private Plugin plugin;
+    public Plugin plugin;
     private Map<UUID, WingedPlayer> wingedPlayers = new HashMap<UUID, WingedPlayer>();
     private BukkitTask moveRunnable = null;
     private BukkitTask wingRunnable = null;
@@ -30,6 +31,9 @@ public class WingsController {
     }
 
     public void enableController(boolean hideWingsOnMove) {
+        String path = plugin.getDataFolder() + File.separator + "wings";
+        File f = new File(path);
+        f.mkdirs();
         Bukkit.getPluginManager().registerEvents(new JoinListener(this), plugin);
         Bukkit.getPluginManager().registerEvents(new QuitListener(this), plugin);
         if(hideWingsOnMove) {
@@ -55,7 +59,7 @@ public class WingsController {
                     }
                 }
             }
-        }.runTaskTimer(plugin, 0, 5);
+        }.runTaskTimer(plugin, 0, 10);
     }
 
     public void disableController() {
