@@ -16,6 +16,7 @@ public class MulitpleColorWings extends Wings {
         this.size = size;
     }
 
+    @Override
     public void spawnParticles(Location l, float angle, float offset, int factor) {
         World world = l.getWorld();
         for(ColoredPoint3D point : points) {

@@ -2,18 +2,18 @@ package me.orian.magicwings.utilities;
 
 import org.bukkit.Color;
 import org.bukkit.plugin.Plugin;
+import org.checkerframework.checker.units.qual.C;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class ColoredPoint3D extends Point3D {
 
     private Color color;
-    private static int c = 90;
+    private static int c = 20;
 
     public ColoredPoint3D(float x, float y, float z, Color color) {
         super(x, y, z);
@@ -37,14 +37,20 @@ public class ColoredPoint3D extends Point3D {
             BufferedImage img = ImageIO.read(f);
             int width = img.getWidth();
             int height = img.getHeight();
-            ColoredPoint3D[] points = new ColoredPoint3D[c * c];
+            List<ColoredPoint3D> points = new ArrayList<ColoredPoint3D>();
             for(int x = 0; x < c; x++) {
-                for (int y = c - 1; y >= 0; y--) {
+                for (int y = 0; y < c; y++) {
                     int color = img.getRGB((int) ((double) x / c * width), (int) ((double) y / c * height));
-                    points[x * c + y] = (new ColoredPoint3D((float) x / (c / 4), (float) y / (c / 4), 0, Color.fromRGB((color & 0xff0000) >> 16, (color & 0xff00) >> 8, color & 0xff)));
+                    if((color >> 24) != 0x00) {
+                        points.add(new ColoredPoint3D((float) x / (c / 2), (c - (float) y) / (c / 2), 0, Color.fromRGB((color & 0xff0000) >> 16, (color & 0xff00) >> 8, color & 0xff)));
+                    }
                 }
             }
-            return points;
+            ColoredPoint3D[] array = new ColoredPoint3D[points.size()];
+            for(int i = 0; i < array.length; i++) {
+                array[i] = points.get(i);
+            }
+            return array;
         } catch(Exception e) {
             e.printStackTrace();
             return null;

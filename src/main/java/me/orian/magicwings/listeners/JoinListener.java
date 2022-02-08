@@ -19,7 +19,7 @@ public class JoinListener implements Listener {
     ColoredPoint3D[] points;
 
     public JoinListener(WingsController controller) {
-        this.points = ColoredPoint3D.createSetFromPicture("pain.jpg", controller.plugin);
+        this.points = ColoredPoint3D.createSetFromPicture("rainbow2.jpg", controller.plugin);
         this.controller = controller;
     }
 
