@@ -1,6 +1,6 @@
-package me.orian.magicwings.listeners;
+package de.felix_kurz.magicwings.listeners;
 
-import me.orian.magicwings.controllers.WingsController;
+import de.felix_kurz.magicwings.controllers.WingsController;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

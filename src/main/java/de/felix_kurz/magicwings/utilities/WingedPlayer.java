@@ -1,6 +1,6 @@
-package me.orian.magicwings.utilities;
+package de.felix_kurz.magicwings.utilities;
 
-import me.orian.magicwings.wings.Wings;
+import de.felix_kurz.magicwings.wings.Wings;
 import org.bukkit.Location;
 
 public class WingedPlayer {

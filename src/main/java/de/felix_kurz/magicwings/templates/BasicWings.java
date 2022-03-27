@@ -1,6 +1,6 @@
-package me.orian.magicwings.templates;
+package de.felix_kurz.magicwings.templates;
 
-import me.orian.magicwings.utilities.Point3D;
+import de.felix_kurz.magicwings.utilities.Point3D;
 
 public class BasicWings {
 

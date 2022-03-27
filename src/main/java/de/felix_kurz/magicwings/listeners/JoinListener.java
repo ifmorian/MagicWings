@@ -1,12 +1,12 @@
-package me.orian.magicwings.listeners;
+package de.felix_kurz.magicwings.listeners;
 
-import me.orian.magicwings.controllers.WingsController;
-import me.orian.magicwings.templates.BasicWings;
-import me.orian.magicwings.utilities.ColoredPoint3D;
-import me.orian.magicwings.utilities.WingedPlayer;
-import me.orian.magicwings.wings.MulitpleColorWings;
-import me.orian.magicwings.wings.SingleColorWings;
-import me.orian.magicwings.wings.Wings;
+import de.felix_kurz.magicwings.controllers.WingsController;
+import de.felix_kurz.magicwings.templates.BasicWings;
+import de.felix_kurz.magicwings.utilities.ColoredPoint3D;
+import de.felix_kurz.magicwings.utilities.WingedPlayer;
+import de.felix_kurz.magicwings.wings.MulitpleColorWings;
+import de.felix_kurz.magicwings.wings.SingleColorWings;
+import de.felix_kurz.magicwings.wings.Wings;
 import org.bukkit.Color;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;

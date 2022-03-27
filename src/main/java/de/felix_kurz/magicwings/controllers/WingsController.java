@@ -1,9 +1,9 @@
-package me.orian.magicwings.controllers;
+package de.felix_kurz.magicwings.controllers;
 
-import me.orian.magicwings.listeners.JoinListener;
-import me.orian.magicwings.listeners.QuitListener;
-import me.orian.magicwings.utilities.WingedPlayer;
-import me.orian.magicwings.wings.Wings;
+import de.felix_kurz.magicwings.listeners.JoinListener;
+import de.felix_kurz.magicwings.listeners.QuitListener;
+import de.felix_kurz.magicwings.wings.Wings;
+import de.felix_kurz.magicwings.utilities.WingedPlayer;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.Plugin;

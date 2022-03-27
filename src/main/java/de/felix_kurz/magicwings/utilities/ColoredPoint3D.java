@@ -1,8 +1,7 @@
-package me.orian.magicwings.utilities;
+package de.felix_kurz.magicwings.utilities;
 
 import org.bukkit.Color;
 import org.bukkit.plugin.Plugin;
-import org.checkerframework.checker.units.qual.C;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;

@@ -1,6 +1,6 @@
-package me.orian.magicwings.wings;
+package de.felix_kurz.magicwings.wings;
 
-import me.orian.magicwings.utilities.Point3D;
+import de.felix_kurz.magicwings.utilities.Point3D;
 import org.bukkit.Color;
 import org.bukkit.Location;
 import org.bukkit.Particle;

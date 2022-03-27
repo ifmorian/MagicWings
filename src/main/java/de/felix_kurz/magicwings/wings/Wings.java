@@ -1,4 +1,4 @@
-package me.orian.magicwings.wings;
+package de.felix_kurz.magicwings.wings;
 
 import org.bukkit.Location;
 import org.bukkit.util.Vector;

@@ -1,6 +1,6 @@
-package me.orian.magicwings.main;
+package de.felix_kurz.magicwings.main;
 
-import me.orian.magicwings.controllers.WingsController;
+import de.felix_kurz.magicwings.controllers.WingsController;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {

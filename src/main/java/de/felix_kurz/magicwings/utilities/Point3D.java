@@ -1,4 +1,4 @@
-package me.orian.magicwings.utilities;
+package de.felix_kurz.magicwings.utilities;
 
 public class Point3D {
 
